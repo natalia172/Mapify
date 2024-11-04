@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapify - Connecting the Dots to Your Travel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+            position: relative; /* Position relative for absolute positioning of the video */
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1; /* Send video to the background */
+            transform: translate(-50%, -50%); /* Center the video */
+            object-fit: cover; /* Cover the entire viewport */
+        }
+
+        .content {
+            flex: 1;
+            position: relative; /* Ensure content is above the video */
+            z-index: 1; /* Bring content above the video */
+        }
+
+        .navbar {
+            background-color: rgba(79, 121, 66, 0.8); /* Semi-transparent background */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            color: #f1c40f;
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #4f7942;
+            padding: 15px 30px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #4f7942;
+            color: #fff;
+        }
+
+        .footer {
+            background: rgba(79, 121, 66, 0.8); /* Semi-transparent background */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer .social-links li {
+            margin: 0 10px;
+        }
+
+        .footer .social-links li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .hero {
+                padding: 50px 10px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="Green Abstract Welcome To My Channel Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header class="navbar">
+        <div class="brand">Mapify</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="places.html">Places to Visit</a></li>
+            <li><a href="journal.html">Travel Journal</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <section class="hero">
+            <h1>Welcome to Mapify</h1>
+            <p>Connecting the dots to your travel</p>
+            <a href="places.html" class="cta-button">Start Exploring</a>
+            <a href="journal.html" class="cta-button">Travel Journal</a>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mapify. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

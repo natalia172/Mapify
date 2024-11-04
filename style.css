@@ -1,0 +1,158 @@
+/* Basic Reset */
+body {
+    font-family: 'Roboto', sans-serif; /* Keep the same font */
+    background-color: #F5F5F5; /* Light background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text color */
+}
+
+/* Header Styling */
+header {
+    background-color: #FFFAF0; /* Header background color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Padding around header */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 36px; /* Title size */
+    font-weight: 700; /* Bold title */
+    color: #4F7942; /* Title color */
+}
+
+header p {
+    font-size: 18px; /* Subtitle size */
+    margin-top: 5px; /* Margin above subtitle */
+    color: #666; /* Subtitle color */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #FFFFFF; /* Navigation background */
+    padding: 10px 0; /* Padding for navigation */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center navigation items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    margin: 0 15px; /* Margin between navigation items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #4F7942; /* Link color */
+    font-weight: bold; /* Bold links */
+    font-size: 16px; /* Font size for links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styling */
+main {
+    max-width: 800px; /* Maximum width for readability */
+    margin: 20px auto; /* Center main content */
+    padding: 20px; /* Padding for main content */
+    background-color: #FFF; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Journal Entries Styling */
+#entries {
+    margin-bottom: 20px; /* Margin below entries */
+}
+
+/* Journal Entry Styling */
+.entry {
+    background-color: #FFF; /* Entry background */
+    padding: 20px; /* Padding for entry */
+    border: 1px solid #ddd; /* Border for entry */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Margin below entry */
+    text-align: center; /* Center text */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Smaller Entry Cover Images */
+.entry-cover {
+    max-width: 60%;  /* Set to 60% of the container width */
+    height: auto;    /* Keep aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Margin below images */
+}
+
+/* Entry Title */
+.entry h2 {
+    font-size: 24px; /* Title size */
+    color: #4F7942; /* Title color */
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Entry Content */
+.entry p {
+    font-size: 16px; /* Content size */
+    color: #555; /* Content color */
+}
+
+/* Journal Entry Form Styling */
+form {
+    display: flex; /* Flexbox layout for form */
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 20px; /* Margin above form */
+}
+
+form label {
+    margin-top: 10px; /* Margin above label */
+}
+
+form input,
+form textarea,
+form button {
+    padding: 10px; /* Padding for inputs */
+    margin-top: 5px; /* Margin above input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+}
+
+form button {
+    background-color: #4F7942; /* Button background color */
+    color: #FFF; /* Button text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 15px; /* Margin above button */
+}
+
+form button:hover {
+    background-color: #3E5E33; /* Darker button on hover */
+}
+
+/* About Section Styling */
+#about {
+    margin-top: 40px; /* Space above About section */
+}
+
+#about h2 {
+    margin-top: 0; /* Remove margin from top */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 20px; /* Padding for footer */
+    background-color: #FFFAF0; /* Footer background color */
+    border-top: 1px solid #ddd; /* Top border */
+    font-size: 14px; /* Font size */
+    margin-top: 20px; /* Margin above footer */
+}

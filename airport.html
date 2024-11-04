@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Header */
+        header {
+            background: #004d00;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 2rem 0;
+        }
+        
+        .section h2 {
+            text-align: center;
+            color: #004d00;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer */
+        footer {
+            background: #004d00;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Airport</h1>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#tips">Travel Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="overview" class="section">
+        <div class="container">
+            <h2>Overview</h2>
+            <p>The airport is a bustling hub of activity, connecting travelers from around the world. It offers various amenities and services to ensure a smooth travel experience.</p>
+        </div>
+    </section>
+
+    <section id="attractions" class="section">
+        <div class="container">
+            <h2>Attractions</h2>
+            <ul>
+                <li>Duty-Free Shopping</li>
+                <li>Restaurants and Cafes</li>
+                <li>Lounge Areas</li>
+                <li>Art Installations</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="shop-free.jpg" alt="Duty Free">
+                <img src="Duty free.jpg" alt="Duty-Free Shop">
+                <img src="garden area airport.jpeg" alt="Lounge Area">
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="section">
+        <div class="container">
+            <h2>Travel Tips</h2>
+            <p>Arrive early to avoid stress, keep your travel documents handy, and check flight statuses regularly for any changes.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Travel Guide</p>
+        </div>
+    </footer>
+</body>
+</html>
